@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    @@include("../partials/head-links.html", {"title": "Orisa - Creative Agency & Portfolio HTML Template"})
+</head>
+
+<body class="at-magic-cursor">
+    <!-- @@include("../partials/preloader.html") -->
+    @@include("../partials/popup-search.html")
+    @@include("../partials/header-2.html")
+    @@include("../partials/sidebar.html")
+    <div class="px-blur-bottom"></div>
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-black-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content" class="z-index-3">
+            <main class="bg-neutral-0">
+                @@include("../sections/about-3/sec-1.html")
+                @@include("../sections/about-3/sec-2.html")
+                @@include("../sections/about-3/sec-3.html")
+                @@include("../sections/about-3/sec-4.html")
+                @@include("../sections/about-3/sec-5.html")
+                @@include("../sections/about-3/sec-6.html")
+                @@include("../sections/about-3/sec-7.html")
+            </main>
+            <!-- Footer placeholder to maintain scroll height -->
+            <div class="footer-placeholder"></div>
+        </div>
+        @@include("../partials/footer-2.html")
+    </div>
+    @@include("../partials/btn-scroll-top.html")
+    @@include("../partials/scripts.html")
+</body>
+
+</html>

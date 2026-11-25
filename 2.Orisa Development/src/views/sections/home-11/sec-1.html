@@ -1,0 +1,77 @@
+<!-- Home 11 / Section 1 — Cinematic Hero with SplitText title reveal -->
+<section class="sec-1-home-11 changeless" aria-label="Motion Video Creative Studio Hero">
+
+    <!-- Full-bleed background video -->
+    <div class="sec-1-home-11__bg" aria-hidden="true">
+        <video class="sec-1-home-11__bg-video" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/imgs/pages/home-11/hero-11.webm" type="video/webm">
+        </video>
+        <div class="sec-1-home-11__bg-overlay"></div>
+    </div>
+
+    <!-- Top navigation bar (eyebrow) -->
+    <div class="sec-1-home-11__topbar">
+        <span class="sec-1-home-11__topbar-label text-uppercase text-scramble">Est. 2019</span>
+        <span class="sec-1-home-11__topbar-divider" aria-hidden="true"></span>
+        <span class="sec-1-home-11__topbar-label text-uppercase">Motion &amp; Video Creative Studio</span>
+        <span class="sec-1-home-11__topbar-divider" aria-hidden="true"></span>
+        <span class="sec-1-home-11__topbar-label text-uppercase">Seoul · London · NYC</span>
+    </div>
+
+    <!-- Hero headline: SplitText reveal -->
+    <div class="sec-1-home-11__headline at_fade_anim" data-delay=".1" data-fade-from="bottom">
+        <h1 class="sec-1-home-11__title at-char-animation">
+            <span class="d-block">We Frame</span>
+            <span class="d-block">The Future</span>
+        </h1>
+    </div>
+
+    <!-- Bottom row: descriptor + play button + scroll cue -->
+    <div class="sec-1-home-11__footer">
+
+        <p class="sec-1-home-11__desc at_fade_anim" data-delay=".6" data-fade-from="bottom" data-start="100%">
+            Award-winning direction, VFX, and branded motion for the world's boldest storytellers.
+        </p>
+
+        <!-- Play reel button -->
+        <a class="sec-1-home-11__reel js-home-11-reel-modal-trigger at_fade_anim" href="#" role="button" data-delay=".65" data-fade-from="bottom" data-start="100%" aria-label="Play showreel video" aria-haspopup="dialog" aria-controls="sec1Home11ReelModal">
+            <span class="sec-1-home-11__reel-ring" aria-hidden="true">
+                <svg class="sec-1-home-11__reel-icon" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M1 1L19 11L1 21V1Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+            </span>
+            <span class="sec-1-home-11__reel-label">Play Reel</span>
+        </a>
+
+        <!-- Scroll indicator -->
+        <div class="sec-1-home-11__scroll at_fade_anim" data-delay=".7" data-fade-from="bottom" data-start="100%" aria-hidden="true">
+            <span class="sec-1-home-11__scroll-line"></span>
+            <span class="sec-1-home-11__scroll-text text-uppercase">Scroll</span>
+        </div>
+    </div>
+
+    <!-- Floating award badge -->
+    <div class="sec-1-home-11__badge at_fade_anim" data-delay=".8" data-fade-from="bottom" aria-label="Awwwards Site of the Year 2024">
+        <span class="sec-1-home-11__badge-value">AWWWARDS</span>
+        <span class="sec-1-home-11__badge-label">Site of the Year</span>
+        <span class="sec-1-home-11__badge-year text-scramble">2024</span>
+    </div>
+
+</section>
+
+<!-- Hero reel modal (sibling of section — hero uses overflow:hidden) -->
+<div class="modal fade sec-1-home-11__reel-modal" id="sec1Home11ReelModal" tabindex="-1" aria-labelledby="sec1Home11ReelModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-transparent border-0 shadow-none">
+            <div class="modal-body p-0 position-relative">
+                <button type="button" class="btn-close btn-close-white sec-1-home-11__reel-modal-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <span class="visually-hidden" id="sec1Home11ReelModalLabel">Showreel video</span>
+                <div class="ratio ratio-16x9 bg-black rounded-3 overflow-hidden">
+                    <video id="sec1Home11ReelVideo" class="sec-1-home-11__reel-modal-video" controls playsinline preload="metadata">
+                        <source src="assets/imgs/pages/home-11/hero-11.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

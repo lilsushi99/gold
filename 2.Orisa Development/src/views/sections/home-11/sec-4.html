@@ -1,0 +1,82 @@
+<!-- Home 11 / Section 4 — Featured Works: stacking portfolio cards with @@loop -->
+<section class="sec-4-home-11" id="home-11-sec-4" aria-label="Featured works">
+    <div class="sec-4-home-11__container">
+
+        <header class="sec-4-home-11__header row g-4 g-xl-5 align-items-end justify-content-between">
+            <div class="col-xl-6 col-lg-7">
+                <div class="sec-4-home-11__eyebrow d-inline-flex align-items-center gap-2 at_fade_anim" data-delay=".05">
+                    <span class="sec-4-home-11__eyebrow-dot" aria-hidden="true"></span>
+                    <span class="sec-4-home-11__eyebrow-text text-uppercase">Featured works</span>
+                </div>
+                <h2 class="sec-4-home-11__title mt-3 mb-0 reveal-text">
+                    <span class="d-block">Motion that</span>
+                    <span class="d-block">earns attention.</span>
+                </h2>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <p class="sec-4-home-11__intro mb-0 at_fade_anim" data-delay=".15">
+                    A curated selection of branded films, title sequences, and interactive motion campaigns — each one a story we're proud to have told.
+                </p>
+                <a class="sec-4-home-11__view-all d-inline-flex align-items-center gap-2 mt-4 at_fade_anim" href="portfolio-1.html" data-delay=".2">
+                    <span>View all projects</span>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M1 12L13 1M13 1H4M13 1V10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Portfolio list using @@loop -->
+        <div class="sec-4-home-11__list mt-5">
+            <!-- beautify ignore:start -->
+            @@loop("../../cards/portfolio/card-portfolio-loop-home-11-sec4.html", [
+            {
+                "classList": "sec-4-home-11__loop-item mb-55",
+                "style": "",
+                "category": "branded-film",
+                "link": "portfolio-details-1.html",
+                "img": "assets/imgs/pages/home-11/img-4.webp",
+                "thumbTitle": "Maison Velours",
+                "title": "Cinère — Brand Film",
+                "description": "30-second hero reel for a luxury fragrance launch",
+                "tagsHtml": "<li><a href=\"#\">Branded Film</a></li><li><a href=\"#\">VFX</a></li><li><a href=\"#\">Colour Grading</a></li>"
+            },
+            {
+                "classList": "sec-4-home-11__loop-item mb-55",
+                "style": "",
+                "category": "title-sequence",
+                "link": "portfolio-details-1.html",
+                "img": "assets/imgs/pages/home-11/img-5.webp",
+                "thumbTitle": "Northwind Pictures",
+                "title": "Volta — Opening Title",
+                "description": "Award-winning main title sequence for a Netflix series",
+                "tagsHtml": "<li><a href=\"#\">Title Sequence</a></li><li><a href=\"#\">Motion Design</a></li><li><a href=\"#\">Sound Sync</a></li>"
+            },
+            {
+                "classList": "sec-4-home-11__loop-item mb-55",
+                "style": "",
+                "category": "interactive",
+                "link": "portfolio-details-1.html",
+                "img": "assets/imgs/pages/home-11/img-6.webp",
+                "thumbTitle": "Tenkai Interactive",
+                "title": "Kōdo — Interactive Reel",
+                "description": "Cursor-driven interactive showreel for a game studio",
+                "tagsHtml": "<li><a href=\"#\">Interactive</a></li><li><a href=\"#\">WebGL</a></li><li><a href=\"#\">UX Motion</a></li>"
+            },
+            {
+                "classList": "sec-4-home-11__loop-item mb-55",
+                "style": "",
+                "category": "documentary",
+                "link": "portfolio-details-1.html",
+                "img": "assets/imgs/pages/home-11/img-7.webp",
+                "thumbTitle": "Helios Grid",
+                "title": "Strata — Documentary Short",
+                "description": "Aerial cinematography and motion infographics for an energy brand",
+                "tagsHtml": "<li><a href=\"#\">Documentary</a></li><li><a href=\"#\">Cinematography</a></li><li><a href=\"#\">Data Viz</a></li>"
+            }
+            ])
+            <!-- beautify ignore:end -->
+        </div>
+
+    </div>
+</section>

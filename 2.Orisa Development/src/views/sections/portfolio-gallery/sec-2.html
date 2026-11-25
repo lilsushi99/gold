@@ -1,0 +1,124 @@
+<!-- portfolio-horizontal-gallery section 2 - Pinned horizontal scroll gallery.
+     Vertical scroll drives the horizontal translation of .hsg-track via GSAP
+     ScrollTrigger (see assets/js/horizontal-scroll-gallery.js). The .hsg-bg
+     layers crossfade in sync with the active slide. -->
+<section class="hsg-stage" aria-label="Featured Projects - Horizontal Scroll Gallery">
+
+    <!-- Background layer - .hsg-bg children are injected by the script
+         (assets/js/horizontal-scroll-gallery.js); each mirrors the matching
+         slide thumbnail, so a single image edit propagates to both layers. -->
+    <div class="hsg-bg-layer" aria-hidden="true">
+        <div class="hsg-bg__veil"></div>
+    </div>
+
+    <!-- Horizontal track of cards. JS measures scrollWidth at runtime so card
+         widths and gaps can change responsively without touching the script. -->
+    <div class="hsg-track-wrap">
+        <div class="hsg-track">
+
+            <article class="hsg-slide" data-slide-index="0">
+                <a class="hsg-slide__link" href="portfolio-details-1.html" aria-label="Open project: Ecommerce Brand">
+                    <div class="hsg-slide__media">
+                        <img class="hsg-slide__img" src="assets/imgs/pages/slideshow/img-1.webp" alt="Ecommerce Brand - project thumbnail" loading="eager" decoding="async">
+                    </div>
+                    <div class="hsg-slide__body">
+                        <h5 class="hsg-slide__title">Ecommerce Brand</h5>
+                        <p class="hsg-slide__tags">
+                            <span>Branding</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Web</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Commerce</span>
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="hsg-slide" data-slide-index="1">
+                <a class="hsg-slide__link" href="portfolio-details-2.html" aria-label="Open project: SaaS Startup">
+                    <div class="hsg-slide__media">
+                        <img class="hsg-slide__img" src="assets/imgs/pages/slideshow/img-2.webp" alt="SaaS Startup - project thumbnail" loading="lazy" decoding="async">
+                    </div>
+                    <div class="hsg-slide__body">
+                        <h5 class="hsg-slide__title">SaaS Startup</h5>
+                        <p class="hsg-slide__tags">
+                            <span>Product</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>UI/UX</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Branding</span>
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="hsg-slide" data-slide-index="2">
+                <a class="hsg-slide__link" href="portfolio-details-3.html" aria-label="Open project: Fintech Platform">
+                    <div class="hsg-slide__media">
+                        <img class="hsg-slide__img" src="assets/imgs/pages/slideshow/img-3.webp" alt="Fintech Platform - project thumbnail" loading="lazy" decoding="async">
+                    </div>
+                    <div class="hsg-slide__body">
+                        <h5 class="hsg-slide__title">Fintech Platform</h5>
+                        <p class="hsg-slide__tags">
+                            <span>Web Design</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Product</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Strategy</span>
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="hsg-slide" data-slide-index="3">
+                <a class="hsg-slide__link" href="portfolio-details-4.html" aria-label="Open project: Global Brand">
+                    <div class="hsg-slide__media">
+                        <img class="hsg-slide__img" src="assets/imgs/pages/slideshow/img-4.webp" alt="Global Brand - project thumbnail" loading="lazy" decoding="async">
+                    </div>
+                    <div class="hsg-slide__body">
+                        <h5 class="hsg-slide__title">Global Brand</h5>
+                        <p class="hsg-slide__tags">
+                            <span>Branding</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Identity</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Campaign</span>
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="hsg-slide" data-slide-index="4">
+                <a class="hsg-slide__link" href="portfolio-details-5.html" aria-label="Open project: DTC Brand">
+                    <div class="hsg-slide__media">
+                        <img class="hsg-slide__img" src="assets/imgs/pages/slideshow/img-5.webp" alt="DTC Brand - project thumbnail" loading="lazy" decoding="async">
+                    </div>
+                    <div class="hsg-slide__body">
+                        <h5 class="hsg-slide__title">DTC Brand</h5>
+                        <p class="hsg-slide__tags">
+                            <span>Brand</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Packaging</span>
+                            <span class="hsg-slide__tag-sep" aria-hidden="true">|</span>
+                            <span>Digital</span>
+                        </p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </div>
+
+    <!-- Bottom progress bar - mirrors the ScrollTrigger progress. -->
+    <div class="hsg-progress" aria-hidden="true">
+        <span class="hsg-progress__bar"></span>
+    </div>
+
+    <!-- Slide counter -->
+    <div class="hsg-counter" aria-live="polite">
+        <span class="hsg-counter__current">01</span>
+        <span class="hsg-counter__sep">/</span>
+        <span class="hsg-counter__total">05</span>
+    </div>
+
+</section>

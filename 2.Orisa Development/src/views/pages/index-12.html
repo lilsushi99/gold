@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <!-- prettier-ignore -->
+    @@include("../partials/head-links.html", {"title": "Orisa - Minimal Portfolio"})
+</head>
+
+<body class="at-magic-cursor">
+    <!-- prettier-ignore -->
+    @@include("../partials/popup-search.html")
+    @@include("../partials/header-12.html")
+    @@include("../partials/sidebar.html")
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-black-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main class="bg-neutral-0">
+                <!-- prettier-ignore -->
+                @@include("../sections/home-12/sec-1.html")
+                @@include("../sections/home-12/sec-2.html")
+                @@include("../sections/home-12/sec-3.html")
+                @@include("../sections/home-12/sec-4.html")
+                @@include("../sections/home-12/sec-5.html")
+                @@include("../sections/home-12/sec-6.html")
+                @@include("../sections/home-12/sec-7.html")
+                @@include("../sections/home-12/sec-8.html")
+            </main>
+            <!-- prettier-ignore -->
+            @@include("../partials/footer-12.html")
+        </div>
+    </div>
+    <!-- prettier-ignore -->
+    @@include("../partials/btn-scroll-top.html")
+    @@include("../partials/scripts.html")
+</body>
+
+</html>

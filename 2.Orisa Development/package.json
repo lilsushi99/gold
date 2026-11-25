@@ -1,0 +1,30 @@
+{
+    "name": "orisa-html-dev",
+    "version": "4.1.0",
+    "description": "Orisa — Creative Agency & Portfolio HTML Template (Gulp dev/build)",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "dev": "cross-env NODE_NO_WARNINGS=1 SASS_SILENCE_DEPRECATIONS=* gulp dev",
+        "build": "cross-env NODE_NO_WARNINGS=1 SASS_SILENCE_DEPRECATIONS=* gulp build"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.2",
+        "cross-env": "^10.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-clean": "^0.4.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-dart-sass": "^1.1.0",
+        "gulp-file-include": "^2.3.0",
+        "gulp-format-html": "^2.3.0",
+        "gulp-html-beautify": "^1.0.1",
+        "gulp-once": "^2.1.1",
+        "gulp-prettier": "^6.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "prettier": "3.8.0",
+        "prettier-ignore": "^0.4.0",
+        "sass": "^1.93.2",
+        "sharp": "^0.34.5"
+    }
+}

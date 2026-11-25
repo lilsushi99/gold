@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--prettier-ignore-->
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<title>Orisa - Documentation</title>
+<script src="assets/js/vendors/color-modes.js"></script>
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg" />
+<!-- Libs CSS -->
+<link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+<link rel="stylesheet" href="assets/css/vendors/aos.css" />
+<link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+<link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+<link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+<link rel="stylesheet" href="assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+<link rel="stylesheet" href="assets/fonts/boxicons/boxicons.min.css" />
+<link rel="stylesheet" href="assets/fonts/remixicon/remixicon.css" />
+<link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css" />
+<link rel="stylesheet" href="assets/fonts/fontawesome/solid.min.css" />
+<link rel="stylesheet" href="assets/fonts/fontawesome/regular.min.css" />
+<!-- Main CSS -->
+<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <!-- prettier-ignore -->
+    <!--Preloader-->
+<div id="preloader">
+    <div id="loader" class="loader">
+        <div class="loader-container">
+            <div class="loader-icon">
+                <svg class="rotateme" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <g>
+                        <path class="fill-primary" d="M24.5043 9.79724L22.7082 18.3981L35.2929 17.1948L37.1117 7.00605L24.5043 9.79724Z" />
+                        <path class="fill-primary" d="M31.9171 17.6837L23.2697 20.6189L30.6333 30.3865L40.723 26.6545L31.9171 17.6837Z" />
+                        <path class="fill-primary" d="M28.4204 27.86L21.4605 22.2312L16.332 33.3249L24.7296 39.7347L28.4204 27.86Z" />
+                        <path class="fill-primary" d="M17.5913 29.998L19.1912 21.3633L6.63465 22.8288L5.04812 33.0511L17.5913 29.998Z" />
+                        <path class="fill-primary" d="M10.2917 22.1777L18.8717 19.0632L11.2859 9.45346L1.28177 13.3945L10.2917 22.1777Z" />
+                        <path class="fill-primary" d="M13.7243 12.2243L20.8121 17.7054L25.6875 6.50938L17.1442 0.277556L13.7243 12.2243Z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Preloader-end -->
+
+    <!-- Navbar -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light w-100 z-999">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex main-logo align-items-center" href="index.html">
+                <img src="assets/imgs/template/favicon.svg" alt="Orisa" class="me-2" />
+                <span class="d-flex align-items-end">
+                    <span>Orisa</span>
+                    <span class="fs-8 text-500 mb-1 ms-1 d-none d-lg-block">| Documentation</span>
+                </span>
+            </a>
+
+            <div class="d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
+                <a class="me-5 d-none d-md-flex gap-1 align-items-center fs-6 me-5" href="https://alithemes.ticksy.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
+                    </svg>
+                    <span>Support</span>
+                    <span class="d-none d-lg-block">Center</span>
+                </a>
+                <a href="https://orisa-html.alithemes.net/demo" class="me-5  d-none d-md-flex gap-1 align-items-center fs-6" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M4 16H20V5H4V16ZM13 18V20H17V22H7V20H11V18H2.9918C2.44405 18 2 17.5511 2 16.9925V4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V16.9925C22 17.5489 21.5447 18 21.0082 18H13Z"></path>
+                    </svg>
+                    Live Demo
+                </a>
+
+                <a href="#" class="btn btn-primary btn-sm d-none d-md-flex align-items-center gap-1 fs-6 fw-bold" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M4.00488 16V4H2.00488V2H5.00488C5.55717 2 6.00488 2.44772 6.00488 3V15H18.4433L20.4433 7H8.00488V5H21.7241C22.2764 5 22.7241 5.44772 22.7241 6C22.7241 6.08176 22.7141 6.16322 22.6942 6.24254L20.1942 16.2425C20.083 16.6877 19.683 17 19.2241 17H5.00488C4.4526 17 4.00488 16.5523 4.00488 16ZM6.00488 23C4.90031 23 4.00488 22.1046 4.00488 21C4.00488 19.8954 4.90031 19 6.00488 19C7.10945 19 8.00488 19.8954 8.00488 21C8.00488 22.1046 7.10945 23 6.00488 23ZM18.0049 23C16.9003 23 16.0049 22.1046 16.0049 21C16.0049 19.8954 16.9003 19 18.0049 19C19.1095 19 20.0049 19.8954 20.0049 21C20.0049 22.1046 19.1095 23 18.0049 23Z"></path>
+                    </svg>
+                    Buy Now
+                </a>
+                <div class="dark-light-switcher d-flex justify-content-center align-items-center icon-shape icon-md border bg-white rounded-3 ms-3 me-md-3 me-0">
+	<i class="bi theme-icon bi-sun-fill"></i>
+	<i class="bi theme-icon bi-moon-stars-fill"></i>
+</div>
+                <div class="burger-icon burger-icon-white border rounded-3">
+                    <span class="burger-icon-top"></span>
+                    <span class="burger-icon-mid"></span>
+                    <span class="burger-icon-bottom"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar button-bg-2">
+    <div class="mobile-header-wrapper-inner">
+        <div class="mobile-header-logo">
+            <a class="navbar-brand d-flex main-logo align-items-center" href="index.html">
+                <img src="assets/imgs/template/favicon.svg" alt="Orisa" />
+                <span class="d-flex align-items-end">
+                    <span>Orisa</span>
+                    <span class="fs-8 text-500 mb-1 ms-1">| Documentation</span>
+                </span>
+            </a>
+            <div class="burger-icon burger-icon-white border rounded-3">
+                <span class="burger-icon-top"></span>
+                <span class="burger-icon-mid"></span>
+                <span class="burger-icon-bottom"></span>
+            </div>
+        </div>
+
+        <div class="mobile-header-content-area">
+            <div class="perfect-scroll">
+                <div class="mobile-menu-wrap mobile-header-border">
+                    <nav>
+                        <ul class="mobile-menu font-heading ps-0">
+                            <li>
+                                <a href="https://alithemes.ticksy.com">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"></path>
+                                    </svg>
+                                    Support Center
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://orisa-html.alithemes.net/demo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path d="M4 16H20V5H4V16ZM13 18V20H17V22H7V20H11V18H2.9918C2.44405 18 2 17.5511 2 16.9925V4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V16.9925C22 17.5489 21.5447 18 21.0082 18H13Z"></path>
+                                    </svg>
+                                    Live Demo
+                                </a>
+                            </li>
+                            <li>
+                                <hr />
+                            </li>
+                            <li class="has-children">
+                                <a class="active" href="#">Getting Started</a>
+                                <ul class="sub-menu">
+                                    <li><a href="index.html">Introduction</a></li>
+                                    <li><a href="development.html">Development</a></li>
+                                    <li><a href="products_structure.html">Products Structure</a></li>
+                                    <li><a href="file-structure.html">File Structure</a></li>
+                                    <li><a href="source-and-credits.html">Resources &amp; Credits</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Style Guide</a>
+                                <ul class="sub-menu">
+                                    <li><a href="typography.html">Typography</a></li>
+                                    <li><a href="colors.html">Colors</a></li>
+                                    <li><a href="customize.html">Customize</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Basic Components</a>
+                                <ul class="sub-menu">
+                                    <li><a href="components-accordion.html">Accordion</a></li>
+                                    <li><a href="components-alerts.html">Alerts</a></li>
+                                    <li><a href="components-badges.html">Badges</a></li>
+                                    <li><a href="components-breadcrumb.html">Breadcrumb</a></li>
+                                    <li><a href="components-buttons.html">Buttons</a></li>
+                                    <li><a href="components-button-group.html">Button group</a></li>
+                                    <li><a href="components-card.html">Card</a></li>
+                                    <li><a href="components-carousel.html">Carousel</a></li>
+                                    <li><a href="components-collapse.html">Collapse</a></li>
+                                    <li><a href="components-dropdowns.html">Dropdowns</a></li>
+                                    <li><a href="components-list-group.html">List group</a></li>
+                                    <li><a href="components-modal.html">Modal</a></li>
+                                    <li><a href="components-navbar.html">Navbar</a></li>
+                                    <li><a href="components-offcanvas.html">Offcanvas</a></li>
+                                    <li><a href="components-pagination.html">Pagination</a></li>
+                                    <li><a href="components-placeholders.html">Placeholders</a></li>
+                                    <li><a href="components-popovers.html">Popovers</a></li>
+                                    <li><a href="components-progress.html">Progress</a></li>
+                                    <li><a href="components-scrollspy.html">Scrollspy</a></li>
+                                    <li><a href="components-spinners.html">Spinners</a></li>
+                                    <li><a href="components-toast.html">Toasts</a></li>
+                                    <li><a href="components-tooltips.html">Tooltips</a></li>
+                                    <li><a href="components-form.html">Form</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Plugins</a>
+                                <ul class="sub-menu">
+                                    <li><a href="plugin-swiper.html">Swiper Slider</a></li>
+                                    <li><a href="plugin-aos.html">AOS animation</a></li>
+                                    <li><a href="plugin-isotope.html">Isotope Filter</a></li>
+                                    <li><a href="plugin-ticker.html">Carousel Ticker</a></li>
+                                    <li><a href="plugin-odometer.html">Odometer Counter</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">Support</a>
+                                <ul class="sub-menu">
+                                    <li><a href="support.html">Support Center</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr />
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="mt-5 pt-5">
+                        Copyright © 2026 <a href="https://orisa-html.alithemes.net/demo" target="_blank">Orisa</a> <br />
+                        Designed by <a href="https://alithemes.com" target="_blank">AliThemes</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+    <main>
+        <aside class="main-sidebar d-none d-lg-block">
+    <div class="docs-nav perfect-scrollbar">
+        <div class="sidebar-logo">
+            <a class="navbar-brand d-flex main-logo align-items-center" href="index.html">
+                <img src="assets/imgs/template/favicon.svg" alt="Orisa" />
+                <span class="d-flex align-items-end">
+                    <span>Orisa</span>
+                </span>
+            </a>
+        </div>
+        <ul class="navbar-nav flex-column" id="sidebarnav">
+            <li class="navbar-header">
+                <h5 class="heading">Getting Started</h5>
+            </li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+            <li class="nav-item"><a href="development.html" class="nav-link">Development</a></li>
+            <li class="nav-item"><a href="products_structure.html" class="nav-link">Products Structure</a></li>
+            <li class="nav-item"><a href="file-structure.html" class="nav-link">File Structure</a></li>
+            <li class="nav-item"><a href="source-and-credits.html" class="nav-link">Resources &amp; Credits</a></li>
+
+            <li>
+                <div class="navbar-border"></div>
+            </li>
+            <li class="navbar-header mt-0">
+                <h5 class="heading">Style Guide</h5>
+            </li>
+            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+            <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li>
+            <li class="nav-item"><a href="customize.html" class="nav-link">Customize</a></li>
+            <li>
+                <div class="navbar-border"></div>
+            </li>
+            <li class="navbar-header mt-0">
+                <h5 class="heading">Plugins</h5>
+            </li>
+            <li class="nav-item"><a href="plugin-swiper.html" class="nav-link">Swiper Slider</a></li>
+            <li class="nav-item"><a href="plugin-aos.html" class="nav-link">AOS animation</a></li>
+            <li class="nav-item"><a href="plugin-isotope.html" class="nav-link">Isotope Filter</a></li>
+            <li class="nav-item"><a href="plugin-ticker.html" class="nav-link">Carousel Ticker</a></li>
+            <li class="nav-item"><a href="plugin-magnific-popup.html" class="nav-link">Magnific popup</a></li>
+            <li class="nav-item"><a href="plugin-odometer.html" class="nav-link">Odometer Counter</a></li>
+
+            <li>
+                <div class="navbar-border"></div>
+            </li>
+
+            <li class="navbar-header mt-0">
+                <h5 class="heading">Support</h5>
+            </li>
+            <li class="nav-item"><a href="support.html" class="nav-link">Support Center</a></li>
+        </ul>
+    </div>
+</aside>
+        <div class="docs-wrapper">
+            <div class="docs-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 col-12"><h1 class="mb-5">AOS Animation</h1>
+<p class="fs-5">AOS (Animate On Scroll) is a popular JavaScript library that allows developers to easily add animations to web pages as the user scrolls down. AOS provides a simple and efficient way to create dynamic and engaging web designs, without requiring extensive knowledge of complex animation techniques.</p>
+
+<p>See details: <a href="https://github.com/michalsnik/aos" target="_blank">https://github.com/michalsnik/aos</a></p>
+
+<hr />
+
+<h5>Example</h5>
+
+<div class="mb-10 border rounded-3 p-lg-5 p-md-3 p-1">
+    <ul class="nav nav-pills nav-switcher d-flex fs-6 mb-5" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link fs-6 active" data-bs-toggle="pill" href="#tab-preview-1" role="tab" aria-controls="tab-preview-1" aria-selected="true">
+                <i class="bi bi-display"></i>
+                Preview
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-6" id="tab-code-1-tab" data-bs-toggle="pill" href="#tab-code-1" role="tab" aria-controls="tab-code-1" aria-selected="false">
+                <i class="bi bi-code"></i>
+                HTML code
+            </a>
+        </li>
+    </ul>
+    <!-- Tab content -->
+    <div class="tab-content">
+        <div class="tab-pane tab-example-design fade show active" id="tab-preview-1" role="tabpanel" aria-labelledby="tab-preview-1-tab">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center mb-5 mt-5" data-aos="fade-up">
+                        <img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-up"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-right">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-right"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-up-right">
+                        <img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-up-right"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-down-right">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-down-right"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="flip-left">
+                        <img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="flip-left"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="flip-up">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="flip-up"</code></p>
+                    </div>
+
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-in">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-in"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-in-down">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-in-down"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-in-right">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-in-right"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-out-up">
+                        <img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-out-up"</code></p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end pt-5 mt-5">
+                    <div class="text-center mb-5 mt-5" data-aos="fade-down">
+                        <img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-down"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-left">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-left"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-up-left">
+                        <img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-up-left"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="fade-down-left">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="fade-down-left"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="flip-right">
+                        <img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="flip-right"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="flip-down">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="flip-down"</code></p>
+                    </div>
+
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-in-up">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-in-up"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-in-left">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-in-left"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-out">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-out"</code></p>
+                    </div>
+                    <div class="text-center mb-5 mt-5" data-aos="zoom-out-down">
+                        <img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+                        <p><code>data-aos="zoom-out-down"</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane tab-example-html fade" id="tab-code-1" role="tabpanel" aria-labelledby="tab-code-1-tab">
+            <pre>
+                <code class="language-markup">
+&lt;div class="row">
+    &lt;div class="col-md-6">
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-up">
+            &lt;img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-up"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-right">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-right"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-up-right">
+            &lt;img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-up-right"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-down-right">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-down-right"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="flip-left">
+            &lt;img src="assets/imgs/docs/card.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="flip-left"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="flip-up">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="flip-up"&lt;/code>&lt;/p>
+        &lt;/div>
+
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-in">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-in"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-in-down">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-in-down"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-in-right">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-in-right"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-out-up">
+            &lt;img src="assets/imgs/docs/card-3.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-out-up"&lt;/code>&lt;/p>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col-md-6 text-end pt-5 mt-5">
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-down">
+            &lt;img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-down"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-left">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-left"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-up-left">
+            &lt;img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-up-left"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="fade-down-left">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="fade-down-left"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="flip-right">
+            &lt;img src="assets/imgs/docs/card-2.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="flip-right"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="flip-down">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="flip-down"&lt;/code>&lt;/p>
+        &lt;/div>
+
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-in-up">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-in-up"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-in-left">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-in-left"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-out">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-out"&lt;/code>&lt;/p>
+        &lt;/div>
+        &lt;div class="text-center mb-5 mt-5" data-aos="zoom-out-down">
+            &lt;img src="assets/imgs/docs/card-4.jpg" alt="Orisa" class="w-75" />
+            &lt;p>&lt;code>data-aos="zoom-out-down"&lt;/code>&lt;/p>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                </code>
+            </pre>
+        </div>
+    </div>
+</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+<footer class="main-footer py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-12">
+                <p class="mb-0">Copyright © 2026 <a href="https://orisa-html.alithemes.net/demo" target="_blank">Orisa</a> | Designed by <a href="https://alithemes.com" target="_blank">AliThemes</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        </div>
+    </main>
+
+    <!-- prettier-ignore -->
+    <!-- Scroll top -->
+<div class="btn-scroll-top">
+   <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+      <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+   </svg>
+</div>
+
+    <!-- Libs JS -->
+<script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+<script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+<script src="assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="assets/js/vendors/aos.js"></script>
+<script src="assets/js/vendors/wow.min.js"></script>
+<script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+<script src="assets/js/vendors/headhesive.min.js"></script>
+<script src="assets/js/vendors/smart-stick-nav.js"></script>
+<script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+<script src="assets/js/vendors/jquery.odometer.min.js"></script>
+<script src="assets/js/vendors/jquery.appear.js"></script>
+<script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/vendors/gsap.min.js"></script>
+<script src="assets/js/vendors/ScrollToPlugin.min.js"></script>
+<script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendors/aat.min.js"></script>
+<script src="assets/js/vendors/Splitetext.js"></script>
+
+<script src="assets/js/vendors/bouncing-blob.js"></script>
+<script src="assets/js/vendors/sidebar-menu.js"></script>
+<script src="assets/js/vendors/popper.min.js"></script>
+<!-- Theme JS -->
+<script src="assets/js/gsap-custom.js"></script>
+<script src="assets/js/imageRevealHover.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

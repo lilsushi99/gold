@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <!-- prettier-ignore -->
+    @@include("../partials/head-links.html", {"title": "Orisa - 3D Studio"})
+</head>
+
+<body class="at-magic-cursor">
+    <!-- prettier-ignore -->
+    @@include("../partials/popup-search.html")
+    @@include("../partials/header-10.html")
+    @@include("../partials/sidebar.html")
+    <div class="px-blur-bottom"></div>
+    <!-- Begin magic cursor -->
+    <div id="magic-cursor" class="cursor-black-bg">
+        <div id="ball"></div>
+    </div>
+    <!-- End magic cursor -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main class="bg-neutral-0">
+                <!-- prettier-ignore -->
+                @@include("../sections/home-10/sec-1.html")
+                @@include("../sections/home-10/sec-2.html")
+                @@include("../sections/home-10/sec-3.html")
+                @@include("../sections/home-10/sec-4.html")
+                @@include("../sections/home-10/sec-5.html")
+                @@include("../sections/home-10/sec-6.html")
+            </main>
+            <!-- prettier-ignore -->
+            @@include("../partials/footer-10.html")
+        </div>
+    </div>
+    <!-- prettier-ignore -->
+    @@include("../partials/btn-scroll-top.html")
+    @@include("../partials/scripts.html")
+    <script src="assets/js/cursor-trail.js"></script>
+</body>
+
+</html>
