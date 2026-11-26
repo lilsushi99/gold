@@ -1,0 +1,22 @@
+:root{--sb-w:250px;--ink:#1b1f2a;--muted:#6b7280;--line:#e5e7eb;--bg:#f4f5f8;--brand:#c8f169;--brand-ink:#1d2410;--side:#14161d}
+body.admin{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:.94rem}
+.sidebar{position:fixed;inset:0 auto 0 0;width:var(--sb-w);background:var(--side);color:#c9ccd6;overflow-y:auto;z-index:1030;transition:transform .2s}
+.sidebar .brand{display:flex;align-items:center;gap:.6rem;padding:1.1rem 1.2rem;color:#fff;font-weight:700;font-size:1.1rem;text-decoration:none;border-bottom:1px solid #22252f}
+.sidebar .brand i{width:28px;height:28px;border-radius:8px;background:var(--brand);display:inline-block}
+.sidebar .grp{padding:.9rem 1.2rem .3rem;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:#6d7286}
+.sidebar a.nav-i{display:flex;align-items:center;gap:.65rem;padding:.5rem 1.2rem;color:#c9ccd6;text-decoration:none;border-left:3px solid transparent}
+.sidebar a.nav-i:hover{background:#1b1e27;color:#fff}
+.sidebar a.nav-i.active{background:#1f2330;color:#fff;border-left-color:var(--brand)}
+.sidebar svg{width:17px;height:17px;flex:none;opacity:.85}
+.main{margin-left:var(--sb-w);min-height:100vh}
+.topbar{background:#fff;border-bottom:1px solid var(--line);padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1020}
+.content{padding:1.5rem}
+.card{border:1px solid var(--line);border-radius:12px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.stat{font-size:1.9rem;font-weight:700;line-height:1}
+.btn-brand{background:var(--brand);color:var(--brand-ink);border:0;font-weight:600}
+.btn-brand:hover{background:#b9e257;color:var(--brand-ink)}
+.crumbs{font-size:.8rem;color:var(--muted)} .crumbs a{color:var(--muted);text-decoration:none}
+.auth-wrap{min-height:100vh;display:grid;place-items:center;background:var(--side);padding:1rem}
+.auth-card{width:100%;max-width:420px;background:#fff;border-radius:16px;padding:2rem}
+.badge-dev{background:#fff3cd;color:#7a5b00}
+@media(max-width:991px){.sidebar{transform:translateX(-100%)}.sidebar.open{transform:none}.main{margin-left:0}}

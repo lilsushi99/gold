@@ -1,6 +1,6 @@
 # PROJECT_ARCHITECTURE.md
 
-Status: **Phase 1 (audit) complete. Phase 2 (Laravel foundation) not started.**
+Status: **Phase 1 (audit) complete. Phase 2 (Laravel 12 foundation, migrations, seeders, SQL export) complete. Phase 3 partially done (admin auth + shell). See PROJECT_PROGRESS.md.**
 See `PROJECT_PROGRESS.md` for the handover state.
 
 ## 1. Existing frontend (audit result)
@@ -44,7 +44,7 @@ The template is a **demo kit**, not a finished website: 15 homepage variants, 6 
 
 ## 3. Proposed Laravel architecture
 
-- Laravel 11/12 LTS-compatible with **PHP 8.2** (check the host's cPanel PHP selector; Laravel 11 needs ≥ 8.2). Blade only, MySQL/MariaDB, no Redis/Queue worker (use `sync` queue, `file`/`database` cache, `database` sessions).
+- **Laravel 12 (chosen: supports PHP 8.2-8.5; Laravel 13 needs PHP 8.3, Laravel 11 is past security support)** on **PHP 8.2** (check the host's cPanel PHP selector; Laravel 11 needs ≥ 8.2). Blade only, MySQL/MariaDB, no Redis/Queue worker (use `sync` queue, `file`/`database` cache, `database` sessions).
 - Laravel project at repo root; original template folders stay untouched. Frontend assets copied (not rewritten) to `public/assets/` so every `assets/...` URL keeps working via `asset()`.
 - Public document root = `public/`. cPanel layout: app outside `public_html`, contents of `public/` in `public_html` with adjusted `index.php` paths (documented in `CPANEL_DEPLOYMENT.md`).
 - No Node at runtime: template assets are pre-built; no Vite build needed for the public site. Admin uses Bootstrap 5.3 (already vendored) + small vanilla JS.
@@ -88,3 +88,10 @@ Roles: Super Admin, Content Admin, SEO Admin (configurable permission sets).
 - Repo is ≈ 275 MB mostly demo images; the production bundle should include only the assets actually used (optional prune step, documented).
 - Shared hosting: no long-running processes; cron optional (scheduled publishing via `schedule:run` every minute, with a request-time fallback check if cron is unavailable).
 - Detailed procedure in `CPANEL_DEPLOYMENT.md` (to be written in Phase 7).
+
+
+## 8. Implementation notes (as built)
+- Admin assets live in `public/cms-assets/` (a `public/admin/` folder would shadow the `/admin` routes on Apache and the PHP dev server).
+- Schema: 30 tables created by 9 migrations (+ Laravel cache table); `Setting::get()` is cached and invalidated on save.
+- Roles/permissions are data (`roles`, `permissions`, `permission_role`); `User::hasPermission()` (super-admin bypass); route middleware `permission:slug`.
+- Redirect lookups use a `source_hash` (sha256) unique index so long URLs stay indexable on MySQL.
