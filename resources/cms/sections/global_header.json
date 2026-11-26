@@ -1,0 +1,43 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/",
+   "hint": "div.col-xl-2 > div.at-header-logo > a"
+  },
+  {
+   "key": "s2",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/logo/favicon-dark.svg",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s3",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "Orisa",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Orisa",
+   "hint": "a > p.h6"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Text",
+   "default": "MENU",
+   "hint": "button.hamburger-open-btn > span"
+  }
+ ],
+ "groups": [],
+ "type": "global_header",
+ "label": "Header",
+ "category": "global"
+}

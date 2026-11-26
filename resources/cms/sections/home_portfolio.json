@@ -1,0 +1,224 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Heading",
+   "default": "Selected work we’re proud of",
+   "hint": "div.mg-portfolio-title-wrap > h2.alt-section-title"
+  },
+  {
+   "key": "s2",
+   "type": "textarea",
+   "label": "Paragraph",
+   "default": "A curated selection of projects where strategy, creativity, and craftsmanship come together to build meaningful and enduring brand experiences.",
+   "hint": "div.at_fade_anim > p.mg-portfolio-dec"
+  },
+  {
+   "key": "s3",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio",
+   "hint": "div.mg-portfolio-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s4",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio",
+   "hint": "div.mg-portfolio-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Link text",
+   "default": "View latest projects",
+   "hint": "div.at-btn-group > a.at-btn"
+  },
+  {
+   "key": "s6",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio",
+   "hint": "div.mg-portfolio-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s7",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio/details",
+   "hint": "div.mg-portfolio-item > div.mg-portfolio-thumb > a"
+  },
+  {
+   "key": "s8",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-14.webp",
+   "hint": "div.mg-portfolio-thumb > a.cursor-hide > img"
+  },
+  {
+   "key": "s9",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "Lumen",
+   "hint": "div.mg-portfolio-thumb > a.cursor-hide > img"
+  },
+  {
+   "key": "s10",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio/details",
+   "hint": "div.w-md-75 > h3.h5 > a"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Link text",
+   "default": "Lumen",
+   "hint": "h3.h5 > a.at-title-text"
+  },
+  {
+   "key": "s12",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Branding system for modern startups",
+   "hint": "div.w-md-75 > p.fz-font-lg"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.mg-portfolio-item)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/portfolio/details",
+     "hint": "div.mg-portfolio-item > div.mg-portfolio-thumb > a"
+    },
+    {
+     "key": "t2",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/pages/img-11.webp",
+     "hint": "div.mg-portfolio-thumb > a.cursor-hide > img"
+    },
+    {
+     "key": "t3",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "Noirform",
+     "hint": "div.mg-portfolio-thumb > a.cursor-hide > img"
+    },
+    {
+     "key": "t4",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/portfolio/details",
+     "hint": "div.w-md-75 > h3.h5 > a"
+    },
+    {
+     "key": "t5",
+     "type": "text",
+     "label": "Link text",
+     "default": "Noirform",
+     "hint": "h3.h5 > a.at-title-text"
+    },
+    {
+     "key": "t6",
+     "type": "text",
+     "label": "Paragraph",
+     "default": "Brand art direction & visual identity",
+     "hint": "div.w-md-75 > p.fz-font-lg"
+    },
+    {
+     "key": "t7",
+     "type": "text",
+     "label": "Link text",
+     "default": "Branding",
+     "hint": "li > a"
+    },
+    {
+     "key": "t8",
+     "type": "text",
+     "label": "Link text",
+     "default": "Web Design",
+     "hint": "li > a"
+    },
+    {
+     "key": "t9",
+     "type": "text",
+     "label": "Link text",
+     "default": "Web development",
+     "hint": "li > a"
+    }
+   ],
+   "items": [
+    {
+     "t1": "/portfolio/details",
+     "t2": "assets/imgs/pages/img-11.webp",
+     "t3": "Noirform",
+     "t4": "/portfolio/details",
+     "t5": "Noirform",
+     "t6": "Brand art direction & visual identity",
+     "t7": "Branding",
+     "t8": "Web Design",
+     "t9": "Web development"
+    },
+    {
+     "t1": "/portfolio/details",
+     "t2": "assets/imgs/pages/img-12.webp",
+     "t3": "Nebula",
+     "t4": "/portfolio/details",
+     "t5": "Nebula",
+     "t6": "UI/UX & product design for digital platforms",
+     "t7": "Branding",
+     "t8": "Web Design",
+     "t9": "Web development"
+    },
+    {
+     "t1": "/portfolio/details",
+     "t2": "assets/imgs/pages/img-13.webp",
+     "t3": "Voidline",
+     "t4": "/portfolio/details",
+     "t5": "Voidline",
+     "t6": "3D animation & motion branding",
+     "t7": "Branding",
+     "t8": "Web Design",
+     "t9": "Web development"
+    }
+   ]
+  },
+  {
+   "key": "g2",
+   "label": "Repeating items (li)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Link text",
+     "default": "brand strategy",
+     "hint": "li > a"
+    }
+   ],
+   "items": [
+    {
+     "t1": "brand strategy"
+    },
+    {
+     "t1": "visual identity"
+    },
+    {
+     "t1": "startup branding"
+    },
+    {
+     "t1": "design system"
+    }
+   ]
+  }
+ ],
+ "type": "home_portfolio",
+ "label": "Featured work",
+ "category": "home"
+}

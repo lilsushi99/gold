@@ -1,0 +1,62 @@
+{
+ "slots": [],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Value",
+     "default": "10",
+     "hint": "div > h1 > span"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Heading",
+     "default": "K+",
+     "hint": "div > h1"
+    },
+    {
+     "key": "t3",
+     "type": "text",
+     "label": "Paragraph",
+     "default": "Years of Creative Practice",
+     "hint": "div > p"
+    }
+   ],
+   "items": [
+    {
+     "t1": "10",
+     "t2": "K+",
+     "t3": "Years of Creative Practice"
+    },
+    {
+     "t1": "50",
+     "t2": "K+",
+     "t3": "Projects Carefully Crafted"
+    },
+    {
+     "t1": "16",
+     "t2": "K+",
+     "t3": "Brands Collaborated With"
+    },
+    {
+     "t1": "20",
+     "t2": "M+",
+     "t3": "Total Funding Supported"
+    },
+    {
+     "t1": "98",
+     "t2": "%",
+     "t3": "Client satisfaction rate"
+    }
+   ]
+  }
+ ],
+ "type": "home_stats",
+ "label": "Statistics",
+ "category": "home"
+}

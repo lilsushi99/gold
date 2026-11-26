@@ -1,0 +1,173 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Text",
+   "default": "INSIDE COMPANY",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s2",
+   "type": "text",
+   "label": "Text",
+   "default": "INSIDE COMPANY",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s3",
+   "type": "text",
+   "label": "Heading",
+   "default": "Latest Posts From Our",
+   "hint": "div.col-lg-8 > h3.alt-section-title"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Heading",
+   "default": "blog and Event Fan page",
+   "hint": "div.col-lg-8 > h3.alt-section-title"
+  },
+  {
+   "key": "s5",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/blog",
+   "hint": "div.col-xxl-2 > div.at-service-btn > a"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Text",
+   "default": "ALL ARTICLES",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Text",
+   "default": "ALL ARTICLES",
+   "hint": "span > span.text-2"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.blog-card)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/blog/details",
+     "hint": "div.blog-card > div.blog-card__thumb > a"
+    },
+    {
+     "key": "t2",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/pages/img-23.webp",
+     "hint": "div.blog-card__thumb > a.blog-card__img-link > img"
+    },
+    {
+     "key": "t3",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "orisa",
+     "hint": "div.blog-card__thumb > a.blog-card__img-link > img"
+    },
+    {
+     "key": "t4",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/blog/details",
+     "hint": "div.blog-card__content > h2.h6 > a"
+    },
+    {
+     "key": "t5",
+     "type": "text",
+     "label": "Link text",
+     "default": "Designing Digital Experiences That Connect Brands and People",
+     "hint": "h2.h6 > a.blog-card__title-link"
+    },
+    {
+     "key": "t6",
+     "type": "text",
+     "label": "Text",
+     "default": "By",
+     "hint": "p.blog-card__meta > span.blog-card__meta-text"
+    },
+    {
+     "key": "t7",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/team/details",
+     "hint": "div.blog-card__content > p.blog-card__meta > a"
+    },
+    {
+     "key": "t8",
+     "type": "text",
+     "label": "Link text",
+     "default": "Olivia",
+     "hint": "p.blog-card__meta > a.blog-card__author"
+    },
+    {
+     "key": "t9",
+     "type": "text",
+     "label": "Text",
+     "default": "– July 3, 2026",
+     "hint": "p.blog-card__meta > span.blog-card__meta-text"
+    }
+   ],
+   "items": [
+    {
+     "t1": "/blog/details",
+     "t2": "assets/imgs/pages/img-23.webp",
+     "t3": "orisa",
+     "t4": "/blog/details",
+     "t5": "Designing Digital Experiences That Connect Brands and People",
+     "t6": "By",
+     "t7": "/team/details",
+     "t8": "Olivia",
+     "t9": "– July 3, 2026"
+    },
+    {
+     "t1": "/blog/details",
+     "t2": "assets/imgs/pages/img-24.webp",
+     "t3": "orisa",
+     "t4": "/blog/details",
+     "t5": "From Concept to Launch: Building Products That Truly Matter",
+     "t6": "By",
+     "t7": "/team/details",
+     "t8": "Daniel",
+     "t9": "– July 8, 2026"
+    },
+    {
+     "t1": "/blog/details",
+     "t2": "assets/imgs/pages/img-25.webp",
+     "t3": "orisa",
+     "t4": "/blog/details",
+     "t5": "Why Strong Visual Identity Is the Foundation of Modern Brands",
+     "t6": "By",
+     "t7": "/team/details",
+     "t8": "Emma",
+     "t9": "– July 12, 2026"
+    },
+    {
+     "t1": "/blog/details",
+     "t2": "assets/imgs/pages/img-26.webp",
+     "t3": "orisa",
+     "t4": "/blog/details",
+     "t5": "Creating Impactful Interfaces Through Thoughtful Design Systems",
+     "t6": "By",
+     "t7": "/team/details",
+     "t8": "Lucas",
+     "t9": "– July 17, 2026"
+    }
+   ]
+  }
+ ],
+ "type": "home_posts",
+ "label": "Latest posts",
+ "category": "home"
+}

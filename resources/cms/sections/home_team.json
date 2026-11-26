@@ -1,0 +1,259 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Text",
+   "default": "MEET OUR TEAM",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s2",
+   "type": "text",
+   "label": "Text",
+   "default": "MEET OUR TEAM",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s3",
+   "type": "textarea",
+   "label": "Heading",
+   "default": "Meet the minds behind Orisa Studio. Rely on our experienced professionals to find solutions tailored just for you.",
+   "hint": "div.at-about-title-wrap > h2.h3"
+  },
+  {
+   "key": "s4",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team",
+   "hint": "div.at-about-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s5",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team",
+   "hint": "div.at-about-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Link text",
+   "default": "Join our Team",
+   "hint": "div.at-btn-group > a.at-btn"
+  },
+  {
+   "key": "s7",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team",
+   "hint": "div.at-about-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Heading",
+   "default": "We are here",
+   "hint": "div > h3.h6"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Text",
+   "default": "205 North Michigan Avenue, Suite 810",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s10",
+   "type": "text",
+   "label": "Text",
+   "default": "Chicago, 60601, USA",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Text",
+   "default": "Phone:",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s12",
+   "type": "url",
+   "label": "Link URL",
+   "default": "tel:+1234567890",
+   "hint": "span.fz-font-md > span.neutral-900 > a"
+  },
+  {
+   "key": "s13",
+   "type": "text",
+   "label": "Link text",
+   "default": "+1234567890",
+   "hint": "span.neutral-900 > a"
+  },
+  {
+   "key": "s14",
+   "type": "text",
+   "label": "Text",
+   "default": "Email:",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s15",
+   "type": "url",
+   "label": "Link URL",
+   "default": "mailto:hello@orisa.com",
+   "hint": "span.fz-font-md > span.neutral-900 > a"
+  },
+  {
+   "key": "s16",
+   "type": "text",
+   "label": "Link text",
+   "default": "hello@nullphpscript.com",
+   "hint": "span.neutral-900 > a"
+  },
+  {
+   "key": "s17",
+   "type": "text",
+   "label": "Text",
+   "default": "245 Fifth Avenue, Suite 1800",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s18",
+   "type": "text",
+   "label": "Text",
+   "default": "New York, NY 10016, USA",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s19",
+   "type": "text",
+   "label": "Text",
+   "default": "Phone:",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s20",
+   "type": "url",
+   "label": "Link URL",
+   "default": "tel:+2125557398",
+   "hint": "span.fz-font-md > span.neutral-900 > a"
+  },
+  {
+   "key": "s21",
+   "type": "text",
+   "label": "Link text",
+   "default": "+2125557398",
+   "hint": "span.neutral-900 > a"
+  },
+  {
+   "key": "s22",
+   "type": "text",
+   "label": "Text",
+   "default": "Email:",
+   "hint": "div.d-flex > span.fz-font-md"
+  },
+  {
+   "key": "s23",
+   "type": "url",
+   "label": "Link URL",
+   "default": "mailto:sale@orisa.com",
+   "hint": "span.fz-font-md > span.neutral-900 > a"
+  },
+  {
+   "key": "s24",
+   "type": "text",
+   "label": "Link text",
+   "default": "sale@orisa.com",
+   "hint": "span.neutral-900 > a"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.col-lg-6)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/pages/img-17.webp",
+     "hint": "div.team-card-image > div.anim-zoomin > img"
+    },
+    {
+     "key": "t2",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "Darrell Steward",
+     "hint": "div.team-card-image > div.anim-zoomin > img"
+    },
+    {
+     "key": "t3",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/team/details",
+     "hint": "div.col-lg-6 > div.team-card > a"
+    },
+    {
+     "key": "t4",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/team/details",
+     "hint": "div.team-card > div.team-card-content > a"
+    },
+    {
+     "key": "t5",
+     "type": "text",
+     "label": "Heading",
+     "default": "Darrell Steward",
+     "hint": "a.team-card-name > h2.h6"
+    },
+    {
+     "key": "t6",
+     "type": "text",
+     "label": "Paragraph",
+     "default": "UI/UX Designer",
+     "hint": "div.team-card-content > p.team-card-position"
+    }
+   ],
+   "items": [
+    {
+     "t1": "assets/imgs/pages/img-17.webp",
+     "t2": "Darrell Steward",
+     "t3": "/team/details",
+     "t4": "/team/details",
+     "t5": "Darrell Steward",
+     "t6": "UI/UX Designer"
+    },
+    {
+     "t1": "assets/imgs/pages/img-18.webp",
+     "t2": "Amelia Courtney",
+     "t3": "/team/details",
+     "t4": "/team/details",
+     "t5": "Amelia Courtney",
+     "t6": "Project Manager"
+    },
+    {
+     "t1": "assets/imgs/pages/img-19.webp",
+     "t2": "Esther Howard",
+     "t3": "/team/details",
+     "t4": "/team/details",
+     "t5": "Esther Howard",
+     "t6": "Software Developer"
+    },
+    {
+     "t1": "assets/imgs/pages/img-20.webp",
+     "t2": "Jacob Jones",
+     "t3": "/team/details",
+     "t4": "/team/details",
+     "t5": "Jacob Jones",
+     "t6": "Marketing CEO"
+    }
+   ]
+  }
+ ],
+ "type": "home_team",
+ "label": "Team / We are here",
+ "category": "home"
+}

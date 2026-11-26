@@ -1,0 +1,56 @@
+{
+ "slots": [],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (li.d-flex)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Heading",
+     "default": "web3",
+     "hint": "li.d-flex > h3.h5"
+    }
+   ],
+   "items": [
+    {
+     "t1": "web3"
+    },
+    {
+     "t1": "B2B & B2C"
+    },
+    {
+     "t1": "SaaS Platforms"
+    },
+    {
+     "t1": "Art Direction"
+    },
+    {
+     "t1": "Web & Mobile Apps"
+    },
+    {
+     "t1": "Motion Design"
+    },
+    {
+     "t1": "UX/UI"
+    },
+    {
+     "t1": "Branding"
+    },
+    {
+     "t1": "Concept Design"
+    },
+    {
+     "t1": "Presentations"
+    },
+    {
+     "t1": "Social Media & Ads"
+    }
+   ]
+  }
+ ],
+ "type": "home_brands2",
+ "label": "Client logos (second row)",
+ "category": "home"
+}

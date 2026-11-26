@@ -1,0 +1,177 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Text",
+   "default": "Why choose us",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s2",
+   "type": "text",
+   "label": "Text",
+   "default": "Why choose us",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s3",
+   "type": "textarea",
+   "label": "Heading",
+   "default": "Delivering measurable results through a strong balance of design excellence and functional performance.",
+   "hint": "div.at-about-title-wrap > h3.h3"
+  },
+  {
+   "key": "s4",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-15.webp",
+   "hint": "div.at-image-hover > div.anim-zoomin > img"
+  },
+  {
+   "key": "s5",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.at-image-hover > div.anim-zoomin > img"
+  },
+  {
+   "key": "s6",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/logo/logo-w-lg.png",
+   "hint": "div.d-flex > div.at-image-hover > img"
+  },
+  {
+   "key": "s7",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.d-flex > div.at-image-hover > img"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Link text",
+   "default": "Creative",
+   "hint": "div.content > a.bg-transparent"
+  },
+  {
+   "key": "s9",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-16.webp",
+   "hint": "div.at-image-hover > div.anim-zoomin > img"
+  },
+  {
+   "key": "s10",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.at-image-hover > div.anim-zoomin > img"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Heading",
+   "default": "Great digital experiences begin with a conversation. Let’s talk.",
+   "hint": "div.content > h4.h6"
+  },
+  {
+   "key": "s12",
+   "type": "textarea",
+   "label": "Heading",
+   "default": "Orisa™ goes beyond aesthetics—bringing clarity through motion, flexible structure, and practical tools that help you move faster without defining your identity.",
+   "hint": "div.col-lg-7 > h4.h6"
+  },
+  {
+   "key": "s13",
+   "type": "text",
+   "label": "Heading",
+   "default": "Active",
+   "hint": "div.bg-neutral-0 > h5.h6"
+  },
+  {
+   "key": "s14",
+   "type": "text",
+   "label": "Heading",
+   "default": "live cases",
+   "hint": "div.bg-neutral-0 > h5.h6"
+  },
+  {
+   "key": "s15",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "We always provide people a complete solution upon focused of any business",
+   "hint": "div.pt-150 > p.fz-font-lg"
+  },
+  {
+   "key": "s16",
+   "type": "text",
+   "label": "Heading",
+   "default": "Trusted",
+   "hint": "div.bg-neutral-0 > h5.h6"
+  },
+  {
+   "key": "s17",
+   "type": "text",
+   "label": "Heading",
+   "default": "Partners",
+   "hint": "div.bg-neutral-0 > h5.h6"
+  },
+  {
+   "key": "s18",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Because sometimes the best design is the one you don’t have to think about.",
+   "hint": "div.pt-150 > p.fz-font-lg"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (span)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Text",
+     "default": "1.8M",
+     "hint": "h4.d-flex > span"
+    }
+   ],
+   "items": [
+    {
+     "t1": "1.8M"
+    },
+    {
+     "t1": "+"
+    }
+   ]
+  },
+  {
+   "key": "g2",
+   "label": "Repeating items (span)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Text",
+     "default": "16K",
+     "hint": "h4.d-flex > span"
+    }
+   ],
+   "items": [
+    {
+     "t1": "16K"
+    },
+    {
+     "t1": "+"
+    }
+   ]
+  }
+ ],
+ "type": "home_why",
+ "label": "Why choose us",
+ "category": "home"
+}

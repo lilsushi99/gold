@@ -1,0 +1,251 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/logo/favicon-dark.svg",
+   "hint": "div.col-xxl-4 > div.d-flex > img"
+  },
+  {
+   "key": "s2",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "Orisa",
+   "hint": "div.col-xxl-4 > div.d-flex > img"
+  },
+  {
+   "key": "s3",
+   "type": "text",
+   "label": "Heading",
+   "default": "Let’s Shape",
+   "hint": "div > h3.h4"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Heading",
+   "default": "Your Next Idea",
+   "hint": "div > h3.h4"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "205 North Michigan Avenue, Suite 810",
+   "hint": "div > p.mb-0"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Chicago, 60601, USA",
+   "hint": "div > p.mb-0"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Heading",
+   "default": "(212) 555-7398",
+   "hint": "div.at-footer-title-wrap > h4.h6"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Heading",
+   "default": "hello@orisa.com",
+   "hint": "div.at-footer-title-wrap > h5.h4"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Text",
+   "default": "Navigation",
+   "hint": "div.at-footer-widget > span.d-block"
+  },
+  {
+   "key": "s10",
+   "type": "text",
+   "label": "Heading",
+   "default": "Orisa Studio",
+   "hint": "div.col-xxl-9 > h1.fz-150"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Text",
+   "default": "®",
+   "hint": "h1.fz-150 > sup.fz-80"
+  },
+  {
+   "key": "s12",
+   "type": "text",
+   "label": "Text",
+   "default": "Orisa © 2026",
+   "hint": "div.at-footer-copyright-wrap > span.at-footer-copyright"
+  },
+  {
+   "key": "s13",
+   "type": "text",
+   "label": "Text",
+   "default": "[ Since 2012 ]",
+   "hint": "div.at-footer-copyright-wrap > span.at-footer-copyright"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (a)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Link text",
+     "default": "Twitter",
+     "hint": "div.at-hero-social > a"
+    }
+   ],
+   "items": [
+    {
+     "t1": "Twitter"
+    },
+    {
+     "t1": "Facebook"
+    },
+    {
+     "t1": "Instagram"
+    },
+    {
+     "t1": "Linkedin"
+    },
+    {
+     "t1": "Behance"
+    },
+    {
+     "t1": "Dribbble"
+    }
+   ]
+  },
+  {
+   "key": "g2",
+   "label": "Repeating items (li.mb-15)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/",
+     "hint": "ul > li.mb-15 > a"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Link text",
+     "default": "Home",
+     "hint": "li.mb-15 > a"
+    }
+   ],
+   "items": [
+    {
+     "t1": "/",
+     "t2": "Home"
+    },
+    {
+     "t1": "/about",
+     "t2": "About"
+    },
+    {
+     "t1": "/portfolio",
+     "t2": "Works"
+    },
+    {
+     "t1": "/blog",
+     "t2": "Blog"
+    },
+    {
+     "t1": "/contact",
+     "t2": "Contact"
+    }
+   ]
+  },
+  {
+   "key": "g3",
+   "label": "Repeating items (li.mb-15)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "#",
+     "hint": "ul > li.mb-15 > a"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Link text",
+     "default": "Shop",
+     "hint": "li.mb-15 > a"
+    }
+   ],
+   "items": [
+    {
+     "t1": "#",
+     "t2": "Shop"
+    },
+    {
+     "t1": "/pricing",
+     "t2": "Pricing"
+    },
+    {
+     "t1": "#",
+     "t2": "Cart"
+    },
+    {
+     "t1": "#",
+     "t2": "Checkout"
+    }
+   ]
+  },
+  {
+   "key": "g4",
+   "label": "Repeating items (li)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Text",
+     "default": "Web Development",
+     "hint": "span > span.text-1"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Text",
+     "default": "Web Development",
+     "hint": "span > span.text-2"
+    }
+   ],
+   "items": [
+    {
+     "t1": "Web Development",
+     "t2": "Web Development"
+    },
+    {
+     "t1": "Motion Graphics",
+     "t2": "Motion Graphics"
+    },
+    {
+     "t1": "Brand Strategy",
+     "t2": "Brand Strategy"
+    },
+    {
+     "t1": "Product Design",
+     "t2": "Product Design"
+    }
+   ]
+  }
+ ],
+ "type": "global_footer",
+ "label": "Footer",
+ "category": "global"
+}

@@ -1,0 +1,106 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-22.webp",
+   "hint": "div.at-banner-thumb > img"
+  },
+  {
+   "key": "s2",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.at-banner-thumb > img"
+  },
+  {
+   "key": "s3",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/",
+   "hint": "div.d-flex > div.at-header-logo > a"
+  },
+  {
+   "key": "s4",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/logo/favicon-dark.svg",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s5",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "Orisa",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Heading",
+   "default": "Orisa",
+   "hint": "a > h4.h6"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Link text",
+   "default": "Local time: 12:30",
+   "hint": "div.d-flex > a.bg-transparent"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Heading",
+   "default": "Let’s Create",
+   "hint": "div.col-lg-5 > h2.common-white"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Heading",
+   "default": "Meaning Together",
+   "hint": "div.col-lg-5 > h2.common-white"
+  },
+  {
+   "key": "s10",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/contact",
+   "hint": "div.col-lg-5 > div.d-flex > a"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Text",
+   "default": "Book A Call Now",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s12",
+   "type": "text",
+   "label": "Text",
+   "default": "Book A Call Now",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s13",
+   "type": "text",
+   "label": "Text",
+   "default": "[ From 8:00 To 16:30 ]",
+   "hint": "div.d-flex > span.common-white"
+  },
+  {
+   "key": "s14",
+   "type": "textarea",
+   "label": "Text",
+   "default": "[ A creative studio crafting bold, user-focused digital experiences. At Orisa, we blend strategy, design, and innovation to help brands stand out and grow. ]",
+   "hint": "div.col-lg-4 > span.common-white"
+  }
+ ],
+ "groups": [],
+ "type": "home_cta",
+ "label": "Call-to-action banner",
+ "category": "home"
+}

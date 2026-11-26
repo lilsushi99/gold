@@ -1,0 +1,184 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-21.webp",
+   "hint": "div.alt-faq-title-wrap > div.rounded-4 > img"
+  },
+  {
+   "key": "s2",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.alt-faq-title-wrap > div.rounded-4 > img"
+  },
+  {
+   "key": "s3",
+   "type": "text",
+   "label": "Heading",
+   "default": "Still no luck? We can help!",
+   "hint": "div.alt-faq-title-wrap > h3.h6"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Let us Know how we can assist",
+   "hint": "div.alt-faq-title-wrap > p.at-faq-dec"
+  },
+  {
+   "key": "s5",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/faqs",
+   "hint": "div.alt-faq-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s6",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/faqs",
+   "hint": "div.alt-faq-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Link text",
+   "default": "Support Center",
+   "hint": "div.at-btn-group > a.at-btn"
+  },
+  {
+   "key": "s8",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/faqs",
+   "hint": "div.alt-faq-title-wrap > div.at-btn-group > a"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Text",
+   "default": "FAQ",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s10",
+   "type": "text",
+   "label": "Text",
+   "default": "FAQ",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Heading",
+   "default": "Answered questions. Everything you might want to know—up front.",
+   "hint": "div.at-faq > h3.at-section-title"
+  },
+  {
+   "key": "s12",
+   "type": "text",
+   "label": "Text",
+   "default": "1",
+   "hint": "div.box-number > span.at-faq-number"
+  },
+  {
+   "key": "s13",
+   "type": "text",
+   "label": "Button text",
+   "default": "How does your design process work?",
+   "hint": "div.at-faq-header > button.at-faq-button"
+  },
+  {
+   "key": "s14",
+   "type": "textarea",
+   "label": "Paragraph",
+   "default": "Our process includes discovery, strategy, design, feedback, and delivery — ensuring clarity, collaboration, and results at every stage.",
+   "hint": "div.at-faq-body > p"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.at-faq-item)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Text",
+     "default": "2",
+     "hint": "div.box-number > span.at-faq-number"
+    },
+    {
+     "key": "t2",
+     "type": "hidden",
+     "label": "Hidden attribute: data-bs-target",
+     "default": "#collapseTwo",
+     "hint": "div.at-faq-item > div.at-faq-header > button",
+     "attr": "data-bs-target"
+    },
+    {
+     "key": "t3",
+     "type": "hidden",
+     "label": "Hidden attribute: aria-controls",
+     "default": "collapseTwo",
+     "hint": "div.at-faq-item > div.at-faq-header > button",
+     "attr": "aria-controls"
+    },
+    {
+     "key": "t4",
+     "type": "text",
+     "label": "Button text",
+     "default": "How long does a typical project take?",
+     "hint": "div.at-faq-header > button.at-faq-button"
+    },
+    {
+     "key": "t5",
+     "type": "hidden",
+     "label": "Hidden attribute: id",
+     "default": "collapseTwo",
+     "hint": "div.accordion > div.at-faq-item > div",
+     "attr": "id"
+    },
+    {
+     "key": "t6",
+     "type": "textarea",
+     "label": "Paragraph",
+     "default": "Timelines vary by scope, but most projects take between 2–6 weeks — with clear milestones to keep everything on track.",
+     "hint": "div.at-faq-body > p"
+    }
+   ],
+   "items": [
+    {
+     "t1": "2",
+     "t2": "#collapseTwo",
+     "t3": "collapseTwo",
+     "t4": "How long does a typical project take?",
+     "t5": "collapseTwo",
+     "t6": "Timelines vary by scope, but most projects take between 2–6 weeks — with clear milestones to keep everything on track."
+    },
+    {
+     "t1": "3",
+     "t2": "#collapseThree",
+     "t3": "collapseThree",
+     "t4": "Do you work with startups or only established brands?",
+     "t5": "collapseThree",
+     "t6": "We work with both startups and established brands — tailoring our approach to fit each stage of growth."
+    },
+    {
+     "t1": "4",
+     "t2": "#collapseFour",
+     "t3": "collapseFour",
+     "t4": "Can you handle custom or complex requests?",
+     "t5": "collapseFour",
+     "t6": "Yes — we specialize in custom and complex projects, creating flexible solutions to meet unique needs."
+    }
+   ]
+  }
+ ],
+ "type": "home_faq",
+ "label": "FAQ",
+ "category": "home"
+}

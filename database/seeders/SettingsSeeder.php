@@ -13,7 +13,7 @@ class SettingsSeeder extends Seeder
             'site_name' => ['Orisa', 'string'], 'site_title' => ['Orisa - Creative Agency', 'string'],
             'tagline' => ['We build brands that last', 'string'], 'site_url' => ['', 'string'],
             'site_description' => ['', 'text'], 'logo' => [null, 'media'], 'logo_dark' => [null, 'media'],
-            'favicon' => [null, 'media'], 'default_image' => [null, 'media'],
+            'favicon' => [null, 'media'], 'default_image' => [null, 'media'], 'default_theme' => ['light', 'string'],
         ],
         'contact' => [
             'contact_email' => ['', 'string'], 'contact_phone' => ['', 'string'], 'contact_whatsapp' => ['', 'string'],

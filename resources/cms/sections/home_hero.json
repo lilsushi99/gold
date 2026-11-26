@@ -1,0 +1,222 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/bg-img.webp",
+   "hint": " > div"
+  },
+  {
+   "key": "s2",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-1.webp",
+   "hint": "div.at-hero-area > div.at-hero-bg > img"
+  },
+  {
+   "key": "s3",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.at-hero-area > div.at-hero-bg > img"
+  },
+  {
+   "key": "s4",
+   "type": "url",
+   "label": "Link URL",
+   "default": "mailto:hello@orisa.com",
+   "hint": "div.container > div.p-absolute > a"
+  },
+  {
+   "key": "s5",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/icons/badge-1.svg",
+   "hint": "div.p-absolute > a.at-hero-button > img"
+  },
+  {
+   "key": "s6",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.p-absolute > a.at-hero-button > img"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Text",
+   "default": "Let’s Talk",
+   "hint": "span.mt-2 > span.fw-700"
+  },
+  {
+   "key": "s8",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-2.webp",
+   "hint": "div.at-hero-video > div.rounded-3 > video"
+  },
+  {
+   "key": "s9",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/video/video-1.mp4",
+   "hint": "div.rounded-3 > video.img-cover > source"
+  },
+  {
+   "key": "s10",
+   "type": "url",
+   "label": "Link URL",
+   "default": "#",
+   "hint": "div.col-xxl-2 > div.at-hero-video > a"
+  },
+  {
+   "key": "s11",
+   "type": "text",
+   "label": "Text",
+   "default": "How we work",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s12",
+   "type": "text",
+   "label": "Text",
+   "default": "How we work",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s13",
+   "type": "textarea",
+   "label": "Text",
+   "default": "We partner with brands to create digital design that drives conversions and commands attention.",
+   "hint": "li.at_fade_anim > span.fz-font-md"
+  },
+  {
+   "key": "s14",
+   "type": "text",
+   "label": "Text",
+   "default": "B2B Marketing Agency",
+   "hint": "div.at-hero-content > span.at-hero-subtitle"
+  },
+  {
+   "key": "s15",
+   "type": "text",
+   "label": "Text",
+   "default": "Designing with",
+   "hint": "h2.at-hero-title > span.at_fade_anim"
+  },
+  {
+   "key": "s16",
+   "type": "text",
+   "label": "Text",
+   "default": "imagination,",
+   "hint": "h2.at-hero-title > span.at_fade_anim"
+  },
+  {
+   "key": "s17",
+   "type": "text",
+   "label": "Text",
+   "default": "driven by purpose.",
+   "hint": "h2.at-hero-title > span.at_fade_anim"
+  },
+  {
+   "key": "s18",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/portfolio",
+   "hint": "div.at-hero-content > div.at-hero-btn > a"
+  },
+  {
+   "key": "s19",
+   "type": "text",
+   "label": "Text",
+   "default": "Explore All Work",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s20",
+   "type": "text",
+   "label": "Text",
+   "default": "Explore All Work",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s21",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/contact",
+   "hint": "div.at-hero-content > div.at-hero-btn > a"
+  },
+  {
+   "key": "s22",
+   "type": "text",
+   "label": "Text",
+   "default": "Get a free quote",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s23",
+   "type": "text",
+   "label": "Text",
+   "default": "Get a free quote",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s24",
+   "type": "url",
+   "label": "Link URL",
+   "default": "mailto:hello@orisa.com",
+   "hint": "div.row > div.col-1 > a"
+  },
+  {
+   "key": "s25",
+   "type": "text",
+   "label": "Text",
+   "default": "hello@nullphpscript.com",
+   "hint": "a.text-white > span.at_fade_anim"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (li)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Text",
+     "default": "Web Development",
+     "hint": "span > span.text-1"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Text",
+     "default": "Web Development",
+     "hint": "span > span.text-2"
+    }
+   ],
+   "items": [
+    {
+     "t1": "Web Development",
+     "t2": "Web Development"
+    },
+    {
+     "t1": "Motion Graphics",
+     "t2": "Motion Graphics"
+    },
+    {
+     "t1": "Brand Strategy",
+     "t2": "Brand Strategy"
+    },
+    {
+     "t1": "Product Design",
+     "t2": "Product Design"
+    }
+   ]
+  }
+ ],
+ "type": "home_hero",
+ "label": "Hero",
+ "category": "home"
+}

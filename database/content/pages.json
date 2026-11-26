@@ -1,0 +1,89 @@
+{
+ "_global": {
+  "title": "Global blocks (header, footer)",
+  "slug": "_global",
+  "template": "global",
+  "is_system": true,
+  "sections": [
+   [
+    "global_search",
+    "Search overlay"
+   ],
+   [
+    "global_header",
+    "Header"
+   ],
+   [
+    "global_offcanvas",
+    "Side menu panel"
+   ],
+   [
+    "global_footer",
+    "Footer"
+   ]
+  ]
+ },
+ "home": {
+  "title": "Home",
+  "slug": "home",
+  "template": "default",
+  "is_home": true,
+  "is_system": true,
+  "sections": [
+   [
+    "home_hero",
+    "Hero"
+   ],
+   [
+    "home_about",
+    "Introduction / Expertise"
+   ],
+   [
+    "home_brands",
+    "Client logos"
+   ],
+   [
+    "home_services",
+    "Services"
+   ],
+   [
+    "home_portfolio",
+    "Featured work"
+   ],
+   [
+    "home_testimonials",
+    "Testimonials"
+   ],
+   [
+    "home_why",
+    "Why choose us"
+   ],
+   [
+    "home_stats",
+    "Statistics"
+   ],
+   [
+    "home_team",
+    "Team / We are here"
+   ],
+   [
+    "home_brands2",
+    "Client logos (second row)"
+   ],
+   [
+    "home_faq",
+    "FAQ"
+   ],
+   [
+    "home_cta",
+    "Call-to-action banner"
+   ],
+   [
+    "home_posts",
+    "Latest posts"
+   ]
+  ],
+  "seo_title": "Orisa - Creative Agency",
+  "meta_description": ""
+ }
+}

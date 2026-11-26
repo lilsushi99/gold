@@ -95,3 +95,8 @@ Roles: Super Admin, Content Admin, SEO Admin (configurable permission sets).
 - Schema: 30 tables created by 9 migrations (+ Laravel cache table); `Setting::get()` is cached and invalidated on save.
 - Roles/permissions are data (`roles`, `permissions`, `permission_role`); `User::hasPermission()` (super-admin bypass); route middleware `permission:slug`.
 - Redirect lookups use a `source_hash` (sha256) unique index so long URLs stay indexable on MySQL.
+- **Section slots (as built):** each section type = `resources/views/sections/<type>.blade.php` (original markup with `{{ $s['sN'] }}` slots and
+  `@foreach ($g['gN'] as $it)` groups) + `resources/cms/sections/<type>.json` (definition + defaults). `SectionRegistry::merge()` layers stored
+  `page_sections.content` over the defaults, so a missing/new slot always falls back to the original value. Regenerate with `python3 tools/cms/build_pages.py`
+  (idempotent for definitions; existing DB content is never overwritten by `ContentSeeder`).
+- Global blocks (search overlay, header, side panel, footer) are sections of the hidden system page `_global` (never public).

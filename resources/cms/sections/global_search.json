@@ -1,0 +1,116 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/",
+   "hint": "div.at-search-top > div.at-header-logo > a"
+  },
+  {
+   "key": "s2",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/logo/favicon.svg",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s3",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "Orisa",
+   "hint": "div.at-header-logo > a > img"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Paragraph",
+   "default": "Orisa",
+   "hint": "a > p.h6"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Placeholder",
+   "default": "Find what you need…",
+   "hint": "form > div.at-search-form-input > input"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Text",
+   "default": "Search",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Text",
+   "default": "Search",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Heading",
+   "default": "Popular searches",
+   "hint": "div.at-categories > h3.at-categories-title"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (li)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "text",
+     "label": "Link text",
+     "default": "UI / UX Design",
+     "hint": "li > a.at-categories-item"
+    }
+   ],
+   "items": [
+    {
+     "t1": "UI / UX Design"
+    },
+    {
+     "t1": "Photography"
+    },
+    {
+     "t1": "Digital Marketing"
+    },
+    {
+     "t1": "Creative"
+    },
+    {
+     "t1": "Innovative"
+    },
+    {
+     "t1": "Visionary"
+    },
+    {
+     "t1": "Disruptive"
+    },
+    {
+     "t1": "Adaptive"
+    },
+    {
+     "t1": "Reliable"
+    },
+    {
+     "t1": "Scalable"
+    },
+    {
+     "t1": "Impactful"
+    },
+    {
+     "t1": "Dynamic"
+    }
+   ]
+  }
+ ],
+ "type": "global_search",
+ "label": "Search overlay",
+ "category": "global"
+}

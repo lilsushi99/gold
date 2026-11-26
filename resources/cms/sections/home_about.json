@@ -1,0 +1,251 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Text",
+   "default": "About Us",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s2",
+   "type": "text",
+   "label": "Text",
+   "default": "About Us",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s3",
+   "type": "textarea",
+   "label": "Text",
+   "default": "We shape animated stories that inspire and engage, uniting thoughtful design, fluid motion, and digital craftsmanship.",
+   "hint": "h3.at-section-title > span"
+  },
+  {
+   "key": "s4",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/contact",
+   "hint": "h3.at-section-title > span.at-about-btn-transform > a"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Text",
+   "default": "GET IN TOUCH",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Text",
+   "default": "GET IN TOUCH",
+   "hint": "span > span.text-2"
+  },
+  {
+   "key": "s7",
+   "type": "text",
+   "label": "Text",
+   "default": "We build",
+   "hint": "div.at-about-subtitle-wrap > span.at-about-subtitle"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Text",
+   "default": "bold",
+   "hint": "span.at-about-subtitle > span.fw-700"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Text",
+   "default": ", resilient brands designed to leave a lasting",
+   "hint": "div.at-about-subtitle-wrap > span.at-about-subtitle"
+  },
+  {
+   "key": "s10",
+   "type": "textarea",
+   "label": "Text",
+   "default": "mark on the world.",
+   "hint": "div.at-about-subtitle-wrap > span.at-about-subtitle"
+  },
+  {
+   "key": "s11",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team/details",
+   "hint": "div.block-author > div.avatar > a"
+  },
+  {
+   "key": "s12",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/avatar/avatar-1.webp",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s13",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s14",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team/details",
+   "hint": "div.block-author > div.avatar > a"
+  },
+  {
+   "key": "s15",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/avatar/avatar-2.webp",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s16",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s17",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/team/details",
+   "hint": "div.block-author > div.avatar > a"
+  },
+  {
+   "key": "s18",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/template/avatar/avatar-3.webp",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s19",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.avatar > a > img"
+  },
+  {
+   "key": "s20",
+   "type": "text",
+   "label": "Value",
+   "default": "15",
+   "hint": "div.d-flex > div.fz-font-md > span"
+  },
+  {
+   "key": "s21",
+   "type": "text",
+   "label": "Text",
+   "default": "+",
+   "hint": "div.d-flex > div.fz-font-md"
+  },
+  {
+   "key": "s22",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-3.webp",
+   "hint": "div.mb-35 > div.at-about-thumb > img"
+  },
+  {
+   "key": "s23",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.mb-35 > div.at-about-thumb > img"
+  },
+  {
+   "key": "s24",
+   "type": "text",
+   "label": "Heading",
+   "default": "Creative Expertise",
+   "hint": "div.at-about-content > h3.at-about-title"
+  },
+  {
+   "key": "s25",
+   "type": "textarea",
+   "label": "Paragraph",
+   "default": "With over a decade of design expertise, we create tailored solutions that engage audiences, build meaningful connections, and elevate brands with creativity and intent.",
+   "hint": "div.at-about-content > p.at-about-dec"
+  },
+  {
+   "key": "s26",
+   "type": "text",
+   "label": "Heading",
+   "default": "Experience & Innovation",
+   "hint": "div.at-about-content > h3.at-about-title"
+  },
+  {
+   "key": "s27",
+   "type": "textarea",
+   "label": "Paragraph",
+   "default": "Backed by a decade of creative experience, we craft visual experiences that bring together strategy, design, and technology to grow brands, inspire audiences, and create meaningful impact.",
+   "hint": "div.at-about-content > p.at-about-dec"
+  },
+  {
+   "key": "s28",
+   "type": "image",
+   "label": "Image",
+   "default": "assets/imgs/pages/img-4.webp",
+   "hint": "div.anim-zoomin-wrap > div.at-about-thumb > img"
+  },
+  {
+   "key": "s29",
+   "type": "alt",
+   "label": "Image alt text",
+   "default": "orisa",
+   "hint": "div.anim-zoomin-wrap > div.at-about-thumb > img"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.avatar)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/team/details",
+     "hint": "div.block-author > div.avatar > a"
+    },
+    {
+     "key": "t2",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/template/avatar/avatar-4.webp",
+     "hint": "div.avatar > a > img"
+    },
+    {
+     "key": "t3",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "orisa",
+     "hint": "div.avatar > a > img"
+    }
+   ],
+   "items": [
+    {
+     "t1": "/team/details",
+     "t2": "assets/imgs/template/avatar/avatar-4.webp",
+     "t3": "orisa"
+    },
+    {
+     "t1": "/team/details",
+     "t2": "assets/imgs/template/avatar/avatar-5.webp",
+     "t3": "orisa"
+    }
+   ]
+  }
+ ],
+ "type": "home_about",
+ "label": "Introduction / Expertise",
+ "category": "home"
+}

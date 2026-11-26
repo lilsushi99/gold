@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Auth\PasswordController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,5 +31,12 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 });
 
-// Temporary public landing (replaced by the Blade-converted site in Phase 4).
-Route::get('/', fn () => response('Orisa CMS - public site coming in Phase 4. <a href="/admin">Admin</a>'));
+/*
+|--------------------------------------------------------------------------
+| Public site - every page renders through the CMS (pages + sections)
+|--------------------------------------------------------------------------
+*/
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/{slug}', [PageController::class, 'show'])
+    ->where('slug', '^(?!admin(/|$))[A-Za-z0-9_\-/]+$')
+    ->name('page');

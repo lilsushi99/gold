@@ -1,0 +1,3 @@
+<?php if(setting('gtm_id')): ?><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo e(setting('gtm_id')); ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><?php endif; ?>
+<?php if(setting('body_scripts')): ?><?php echo setting('body_scripts'); ?><?php endif; ?>
+<?php /**PATH /home/claude/gold/resources/views/partials/analytics-body.blade.php ENDPATH**/ ?>

@@ -1,0 +1,229 @@
+{
+ "slots": [
+  {
+   "key": "s1",
+   "type": "text",
+   "label": "Text",
+   "default": "OUR SOLUTIONS",
+   "hint": "span.text-uppercase > span.text-1"
+  },
+  {
+   "key": "s2",
+   "type": "text",
+   "label": "Text",
+   "default": "OUR SOLUTIONS",
+   "hint": "span.text-uppercase > span.text-2"
+  },
+  {
+   "key": "s3",
+   "type": "text",
+   "label": "Text",
+   "default": "Since 2012",
+   "hint": "div.at-service-subtitle-wrap > span.fs-font-md"
+  },
+  {
+   "key": "s4",
+   "type": "text",
+   "label": "Value",
+   "default": "38",
+   "hint": "div.at-service-sales-wrap > h4.h5 > span"
+  },
+  {
+   "key": "s5",
+   "type": "text",
+   "label": "Heading",
+   "default": "+",
+   "hint": "div.at-service-sales-wrap > h4.h5"
+  },
+  {
+   "key": "s6",
+   "type": "text",
+   "label": "Text",
+   "default": "Completed projects",
+   "hint": "div.at-service-sales-wrap > span.fz-font-lg"
+  },
+  {
+   "key": "s7",
+   "type": "url",
+   "label": "Link URL",
+   "default": "/contact",
+   "hint": "div.at-service-list-wrap > div.at-service-btn > a"
+  },
+  {
+   "key": "s8",
+   "type": "text",
+   "label": "Text",
+   "default": "Get a free quote",
+   "hint": "span > span.text-1"
+  },
+  {
+   "key": "s9",
+   "type": "text",
+   "label": "Text",
+   "default": "Get a free quote",
+   "hint": "span > span.text-2"
+  }
+ ],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (div.hover-image)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/pages/img-5.webp",
+     "hint": "div.at-service-img-wrapper > div.hover-image > img"
+    },
+    {
+     "key": "t2",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "Service Image",
+     "hint": "div.at-service-img-wrapper > div.hover-image > img"
+    }
+   ],
+   "items": [
+    {
+     "t1": "assets/imgs/pages/img-5.webp",
+     "t2": "Service Image"
+    },
+    {
+     "t1": "assets/imgs/pages/img-6.webp",
+     "t2": "Service Image"
+    },
+    {
+     "t1": "assets/imgs/pages/img-7.webp",
+     "t2": "Service Image"
+    },
+    {
+     "t1": "assets/imgs/pages/img-8.webp",
+     "t2": "Service Image"
+    },
+    {
+     "t1": "assets/imgs/pages/img-9.webp",
+     "t2": "Service Image"
+    },
+    {
+     "t1": "assets/imgs/pages/img-10.webp",
+     "t2": "Service Image"
+    }
+   ]
+  },
+  {
+   "key": "g2",
+   "label": "Repeating items (a)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "url",
+     "label": "Link URL",
+     "default": "/services/details",
+     "hint": "div.col-xxl-7 > div.at-service-list-wrap > a"
+    },
+    {
+     "key": "t2",
+     "type": "text",
+     "label": "Text",
+     "default": "[01]",
+     "hint": "div.count > span.number"
+    },
+    {
+     "key": "t3",
+     "type": "text",
+     "label": "Heading",
+     "default": "UI/UX Design",
+     "hint": "div.content > h1.title"
+    },
+    {
+     "key": "t4",
+     "type": "text",
+     "label": "Paragraph",
+     "default": "We help you build successful products by",
+     "hint": "div.content > p.text"
+    },
+    {
+     "key": "t5",
+     "type": "text",
+     "label": "Paragraph",
+     "default": "understanding your market and users.",
+     "hint": "div.content > p.text"
+    },
+    {
+     "key": "t6",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/pages/img-5-sm.webp",
+     "hint": "div.at-service-item > div.thumb > img"
+    },
+    {
+     "key": "t7",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "orisa",
+     "hint": "div.at-service-item > div.thumb > img"
+    }
+   ],
+   "items": [
+    {
+     "t1": "/services/details",
+     "t2": "[01]",
+     "t3": "UI/UX Design",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-5-sm.webp",
+     "t7": "orisa"
+    },
+    {
+     "t1": "/services/details",
+     "t2": "[02]",
+     "t3": "Branding",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-6-sm.webp",
+     "t7": "orisa"
+    },
+    {
+     "t1": "/services/details",
+     "t2": "[03]",
+     "t3": "Development",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-7-sm.webp",
+     "t7": "orisa"
+    },
+    {
+     "t1": "/services/details",
+     "t2": "[04]",
+     "t3": "3D Animations",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-8-sm.webp",
+     "t7": "orisa"
+    },
+    {
+     "t1": "/services/details",
+     "t2": "[05]",
+     "t3": "Marketing",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-9-sm.webp",
+     "t7": "orisa"
+    },
+    {
+     "t1": "/services/details",
+     "t2": "[06]",
+     "t3": "Graphics",
+     "t4": "We help you build successful products by",
+     "t5": "understanding your market and users.",
+     "t6": "assets/imgs/pages/img-10-sm.webp",
+     "t7": "orisa"
+    }
+   ]
+  }
+ ],
+ "type": "home_services",
+ "label": "Services",
+ "category": "home"
+}

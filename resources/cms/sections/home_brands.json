@@ -1,0 +1,118 @@
+{
+ "slots": [],
+ "groups": [
+  {
+   "key": "g1",
+   "label": "Repeating items (li.carouselTicker__item)",
+   "slots": [
+    {
+     "key": "t1",
+     "type": "image",
+     "label": "Image",
+     "default": "assets/imgs/icons/brand-1.webp",
+     "hint": "li.carouselTicker__item > div.brand-item > img"
+    },
+    {
+     "key": "t2",
+     "type": "alt",
+     "label": "Image alt text",
+     "default": "logo-brand",
+     "hint": "li.carouselTicker__item > div.brand-item > img"
+    }
+   ],
+   "items": [
+    {
+     "t1": "assets/imgs/icons/brand-1.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-2.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-3.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-4.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-5.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-6.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-1.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-2.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-3.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-5.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-6.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-1.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-2.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-3.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-4.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-5.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-6.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-1.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-2.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-3.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-4.webp",
+     "t2": "logo-brand"
+    },
+    {
+     "t1": "assets/imgs/icons/brand-5.webp",
+     "t2": "logo-brand"
+    }
+   ]
+  }
+ ],
+ "type": "home_brands",
+ "label": "Client logos",
+ "category": "home"
+}
