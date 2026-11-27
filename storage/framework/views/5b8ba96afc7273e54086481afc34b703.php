@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <title><?php echo $__env->yieldContent('title', 'Dashboard'); ?> - <?php echo e(config('app.name')); ?></title>
     <link rel="stylesheet" href="<?php echo e(asset('cms-assets/vendor/bootstrap.min.css')); ?>">
     <link rel="stylesheet" href="<?php echo e(asset('cms-assets/admin.css')); ?>">
@@ -45,7 +46,9 @@
         <?php echo $__env->yieldContent('content'); ?>
     </main>
 </div>
+<?php echo $__env->make('admin.partials.modals', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 <script src="<?php echo e(asset('cms-assets/vendor/bootstrap.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cms-assets/admin.js')); ?>"></script>
 <?php echo $__env->yieldPushContent('scripts'); ?>
 </body>
 </html>

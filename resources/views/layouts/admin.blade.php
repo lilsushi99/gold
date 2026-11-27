@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex,nofollow">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Dashboard') - {{ config('app.name') }}</title>
     <link rel="stylesheet" href="{{ asset('cms-assets/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('cms-assets/admin.css') }}">
@@ -44,7 +45,9 @@
         @yield('content')
     </main>
 </div>
+@include('admin.partials.modals')
 <script src="{{ asset('cms-assets/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('cms-assets/admin.js') }}"></script>
 @stack('scripts')
 </body>
 </html>

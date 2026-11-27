@@ -32,15 +32,29 @@ class PageController extends Controller
         abort_unless($page->isPublic() || $preview, 404);
 
         $page->loadMissing('seo');
-        $sections = $page->sections()->where('is_visible', true)->orderBy('position')->get();
+        $globalPage = Page::where('slug', '_global')->first();
 
-        $globals = Page::where('slug', '_global')->first()?->sections->keyBy('type') ?? collect();
+        if ($preview && $page->hasDraft()) {
+            // Admin preview shows the UNPUBLISHED draft; visitors keep seeing the live version.
+            $d = $page->draft;
+            $page->title = $d['title'] ?? $page->title;
+            $body = collect($d['sections'])->map(fn ($s) => SectionRenderer::renderData($s['type'], $s['content'] ?? null, $s['is_visible'] ?? true))->implode("\n");
+        } else {
+            $sections = $page->sections()->where('is_visible', true)->orderBy('position')->get();
+            $body = $sections->map(fn ($s) => SectionRenderer::render($s))->implode("\n");
+        }
+
+        if ($preview && $globalPage?->hasDraft()) {
+            $globals = collect($globalPage->draft['sections'])->mapWithKeys(fn ($s) => [$s['type'] => SectionRenderer::renderData($s['type'], $s['content'] ?? null, $s['is_visible'] ?? true)]);
+        } else {
+            $globals = ($globalPage?->sections ?? collect())->keyBy('type')->map(fn ($s) => SectionRenderer::render($s));
+        }
 
         return response()->view('layouts.app', [
             'page' => $page,
             'seo' => SeoService::forPage($page),
-            'body' => $sections->map(fn ($s) => SectionRenderer::render($s))->implode("\n"),
-            'globals' => $globals->map(fn ($s) => SectionRenderer::render($s)),
+            'body' => $body,
+            'globals' => $globals,
             'preview' => $preview,
         ])->header('X-Robots-Tag', $preview ? 'noindex' : null);
     }

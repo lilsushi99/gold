@@ -8,11 +8,17 @@ class SectionRenderer
 {
     public static function render(PageSection $section): string
     {
-        if (! $section->is_visible || ! view()->exists("sections.{$section->type}")) {
+        return self::renderData($section->type, $section->content, (bool) $section->is_visible);
+    }
+
+    /** Render from raw data (used for live sections and for unpublished drafts in preview). */
+    public static function renderData(string $type, ?array $content, bool $visible = true): string
+    {
+        if (! $visible || ! view()->exists("sections.{$type}")) {
             return '';
         }
-        $merged = SectionRegistry::merge($section->type, $section->content);
+        $merged = SectionRegistry::merge($type, $content);
 
-        return view("sections.{$section->type}", ['s' => $merged['slots'], 'g' => $merged['groups']])->render();
+        return view("sections.{$type}", ['s' => $merged['slots'], 'g' => $merged['groups']])->render();
     }
 }

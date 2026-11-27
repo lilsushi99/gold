@@ -17,10 +17,13 @@ return new class extends Migration
             $t->text('excerpt')->nullable();
             $t->foreignId('featured_media_id')->nullable()->constrained('media')->nullOnDelete();
             $t->string('status', 20)->default('draft')->index(); // draft | published | scheduled
-            $t->timestamp('publish_at')->nullable();
+            $t->dateTime('publish_at')->nullable();
             $t->boolean('is_home')->default(false);
             $t->boolean('is_system')->default(false); // system pages (404, home) cannot be deleted
             $t->unsignedInteger('position')->default(0);
+            $t->longText('draft')->nullable();            // pending (unpublished) edits: JSON, see App\Cms\PageDraft
+            $t->timestamp('draft_updated_at')->nullable();
+            $t->foreignId('draft_updated_by')->nullable()->constrained('users')->nullOnDelete();
             $t->foreignId('created_by')->nullable()->constrained('users')->nullOnDelete();
             $t->foreignId('updated_by')->nullable()->constrained('users')->nullOnDelete();
             $t->timestamps();

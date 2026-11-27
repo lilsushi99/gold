@@ -34,7 +34,7 @@ return new class extends Migration
             $t->foreignId('featured_media_id')->nullable()->constrained('media')->nullOnDelete();
             $t->string('featured_alt')->nullable();
             $t->string('status', 20)->default('draft')->index(); // draft | published | scheduled
-            $t->timestamp('published_at')->nullable()->index();
+            $t->dateTime('published_at')->nullable()->index();
             $t->unsignedInteger('reading_minutes')->nullable();
             $t->timestamps();
         });

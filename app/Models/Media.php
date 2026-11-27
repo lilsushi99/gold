@@ -29,7 +29,8 @@ class Media extends Model
 
     public function getUrlAttribute(): string
     {
-        return \Illuminate\Support\Facades\Storage::disk($this->disk)->url($this->path);
+        // Root-relative so it works on any domain (dev, staging, production, imported SQL).
+        return '/storage/' . ltrim($this->path, '/');
     }
 
     public function isImage(): bool

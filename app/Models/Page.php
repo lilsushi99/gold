@@ -11,11 +11,11 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 class Page extends Model
 {
-    protected $fillable = ['parent_id', 'title', 'slug', 'template', 'excerpt', 'featured_media_id', 'status', 'publish_at', 'is_home', 'is_system', 'position', 'created_by', 'updated_by'];
+    protected $fillable = ['parent_id', 'title', 'slug', 'template', 'excerpt', 'featured_media_id', 'status', 'publish_at', 'is_home', 'is_system', 'position', 'draft', 'draft_updated_at', 'draft_updated_by', 'created_by', 'updated_by'];
 
     protected function casts(): array
     {
-        return ['publish_at' => 'datetime', 'is_home' => 'boolean', 'is_system' => 'boolean'];
+        return ['publish_at' => 'datetime', 'is_home' => 'boolean', 'is_system' => 'boolean', 'draft' => 'array', 'draft_updated_at' => 'datetime'];
     }
 
     public function parent(): BelongsTo
@@ -60,6 +60,11 @@ class Page extends Model
     {
         return $this->status === 'published'
             || ($this->status === 'scheduled' && $this->publish_at && $this->publish_at->lte(now()));
+    }
+
+    public function hasDraft(): bool
+    {
+        return ! empty($this->draft);
     }
 
     public function path(): string
